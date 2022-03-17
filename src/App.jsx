@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
-  const [adviceToShow, setAdviceToShow] = useState("");
+  const [adviceToShow, setAdviceToShow] = useState("Loading...");
 
   // Fetch Advice
   async function fetchAdvice() {
@@ -13,11 +13,7 @@ function App() {
     console.log(advice);
   }
 
-  useEffect(() => {
-    return () => {
-      fetchAdvice();
-    };
-  }, []);
+  useEffect(() => fetchAdvice(), []);
 
   return (
     <div className="App">
