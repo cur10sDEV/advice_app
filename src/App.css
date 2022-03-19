@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.App {
+	display: grid;
+	place-items: center;
+	background-image: url("https://source.unsplash.com/random");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	max-width: 100%;
+}
+
+.card {
+	background: linear-gradient(#03c8fe4e, #000000);
+	padding: 50px 25px;
+	border-radius: 25px;
+	max-width: 80%;
+	min-width: 40%;
+	max-height: 40%;
+	box-shadow: 5px 5px 10px 5px rgba(50, 50, 50, 0.5);
+	text-align: center;
+}
+
+.advice {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 25px;
+}
+
+.getNewQuote {
+	padding: 0.5rem 1rem;
+	font-size: 1.05rem;
+	background: transparent;
+	border: 2px solid deepskyblue;
+	color: deepskyblue;
+	border-radius: 25px;
+	box-shadow: 2px 5px 5px rgba(50, 50, 50, 0.25);
+}
+
+.getNewQuote:focus,
+.getNewQuote:hover {
+	transform: scale(1.05);
+	transition: 0.1s ease-in-out;
+	background: #fff;
+}

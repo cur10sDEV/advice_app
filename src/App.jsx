@@ -10,7 +10,6 @@ function App() {
     const { slip } = await res.json();
     const { advice } = await slip;
     setAdviceToShow(advice);
-    console.log(advice);
   }
 
   useEffect(() => fetchAdvice(), []);
